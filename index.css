@@ -1,0 +1,163 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 2rem 0;
+}
+nav {
+  background-color: #34495e;
+  padding: 1rem;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* For responsive adjustments */
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+h1,
+h2 {
+  color: #2c3e50;
+}
+.project,
+.paper,
+.patent {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill {
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+form {
+  display: grid;
+  gap: 1rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .skills {
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .skill {
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}

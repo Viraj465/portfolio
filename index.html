@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Viraaj Sawant</title>
+  </head>
+  <body>
+    <header>
+      <h1>Viraj Sawant</h1>
+      <p>Software Engineer | Machine Learning Enthusiast</p>
+      <div class="profile-image">
+        <img src="profile photo.jpg" alt="Viraj Sawant's Profile Photo" />
+      </div>
+    </header>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#patent">Patent</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate software engineer with a focus on machine learning
+          and web development. I have completed my B.E. in Information
+          Technology from University of Mumbai, I have experience in
+          implementing advanced machine learning algorithms and developing
+          innovative projects.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project">
+          <h3>Hybrid GAN for Image Enhancement and Preservation</h3>
+          <p>
+            Designed and developed a hybrid GAN model integrating SRGAN and
+            DCGAN for superior image enhancement capabilities. Achieved a PSNR
+            of 25-30 over 3001 epochs, significantly improving feature
+            propagation.
+          </p>
+        </div>
+        <div class="project">
+          <h3>AI-driven Sign Language Detection Glove</h3>
+          <p>
+            Developed a sign language glove using ESP-32, Node MCU, flex sensor,
+            and TensorFlow lite CNN model for on-device detection. Recognized as
+            a top innovation in the Smart India Hackathon Grand Finale.
+          </p>
+        </div>
+        <div class="project">
+            <h3>PEAR - Personalized Evaluation of Allergens and Recipes.</h3>
+            <a href="https://github.com/Viraj465/PEAR">Github Link</a>
+            <p>
+                PEAR is an AI-driven solution designed to provide personalized insights into food allergens, nutritional values, and recipe alternatives tailored to individual dietary preferences and health requirements. The project combines machine learning and use of GEN-AI API (llama3.2) to evaluate food ingredients, detect potential allergens, and suggest safe and nutritious recipes, helping users make informed choices. This application was created at Mumbai HackFest'24.
+            </p>
+          </div>
+      </section>
+
+      <section id="research">
+        <h2>Published Research</h2>
+        <div class="paper">
+          <h3>
+            <a href="https://journal.esrgroups.org/jes/article/view/3284"
+              >A Survey on Facial Emotion Recognition and Fake Emotion Detection
+              Techniques</a
+            >
+          </h3>
+          <p>
+            Published in the Journal of Electrical Systems. DOI:
+            doi.org/10.52783/jes.3284
+          </p>
+          <p>
+            Co-authors: Husna Shaikh, Er. Sanam Kazi, Wasim Jasani, Viraj
+            Sawant, Naser Shaikh, Pranav Jintunkar.
+          </p>
+        </div>
+        <div class="paper">
+          <h3>
+            <a href="#"
+              >A Novel CNN-ANN Fusion Approach for Improved Facial Emotion
+              Detection</a
+            >
+          </h3>
+            <i>in-preview</i>
+          </p>
+          <p>
+            Co-authors:Viraj Sawant, Husna Shaikh, Er. Sanam Kazi, Wasim Jasani, Naser Shaikh, Lamiya Rampurwala.
+          </p>
+        </div>
+      </section>
+
+      <section id="patent">
+        <h2>Patent</h2>
+        <div class="patent">
+          <h3>
+            A System for Detection of Fake and Genuine Emotions from Facial
+            Images and a method Thereof
+          </h3>
+          <p>
+            Application Number: 202421040795 | Publication Date (U/S 11A):
+            28-06-2024
+          </p>
+          <p>
+            Developed advanced models for distinguishing genuine and fake
+            emotions in digital interactions using facial expression analysis.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <span class="skill">C++</span>
+          <span class="skill">Python</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">SQL</span>
+          <span class="skill">React</span>
+          <span class="skill">TensorFlow</span>
+          <span class="skill">PyTorch</span>
+          <span class="skill">AWS</span>
+          <span class="skill">GCP</span>
+          <span class="skill">Git</span>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Viraj Sawant. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
